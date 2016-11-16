@@ -1,0 +1,22 @@
+{% extends "parent.njk" %}
+
+{% block content %}
+<div class="row">
+  <ul>
+    {% for error in old('errors') %}
+      <li>{{ error.message }}</li>
+    {% endfor %}
+  </ul>
+  <form method="POST">
+    {{ csrfField }}
+    <input name="name" value="{{ old('name') }}"/>
+    <textarea name="description">{{ old('description') }}</textarea>
+    <select name="category_id">
+      {% for category in categories %}
+      <option value="{{ category.id }}">{{ category.name }}</option>
+      {% endfor %}
+    </select>
+    <input type="submit"/>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,2 @@
+node ace make:view Register
+node ace make:controller UserController

@@ -1,0 +1,19 @@
+Na szóval, ha lée akarod tölteni gitről és 
+bemásolod, akkor ha nem jó a jelszó újra kell
+rakni majdnem mindent
+
+1: npm install
+2: .env átmásolása az env.exampplébe
+3: config/expressadmin törlése
+4: cmdbe:node_modules\.bin\admin config\express-admin
+5:  Database type: sqlite                                      
+    Database file: database/development.sqlite                 
+    Server port: 4444                                          
+    Admin user: a                                              
+    Admin password: aaAA12
+6: ha nem jó akkor újra kell építeni az adtb modellt
+7: node ace migration:reset
+8: node ace migration:run
+9: utána indulhat a móka
+
+https://github.com/zoltan-mihalyi/alkfejl-recept-5/ gyakvez gite

@@ -1,0 +1,10 @@
+npm i npm@3.8.9 => fsevents hiba? git pull után
+npm i => package.json-ben levő dependencyk telepítése
+.env hiányzik git pull után => env.example-t másoljuk, átnevezük
+
+*list() => * a párhuzamosítás miatt(generátor, yield-el kilépünk)
+
+njk-ban {{ XXX }} között lehet megadni a paramétert
+
+--save => ezzel bekerül a package.json-be a dependency
+node ace => gyorsan új sablonok létrehozása(controlle auth:setup)
